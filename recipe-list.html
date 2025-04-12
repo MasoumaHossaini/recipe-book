@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3d9d9;
+        }
+
+        nav {
+            background: #714141;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .link {
+            color: #f3d9d9;
+        }
+        .link:hover {
+            color: black;
+        }
+        a {
+            color: black;
+        }
+        img {
+            border-radius: 10px;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .recipe {
+            background-color: #dea9a9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .recipe:hover {
+            transform: scale(1.02);
+        }
+
+        .recipe img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="link">Home |</a>
+            <a href="add-recipe.html" class="link"> Add Recipe |</a>
+            <a href="recipe-list.html" class="link"> Recipe List</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>All Recipes</h1>
+        <label for="Seach">Search</label>
+        <input type="text" placeholder="Seach recipes...">
+        <br>
+        <br>
+
+        <label for="category">Choose a category:</label>
+        <select name="category" id="category">
+            <option value="All">All</option>
+            <option value="Dessert">Desserts</option>
+            <option value="Main">Main Meals</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Appetizer">Appetizers</option>
+            <option value="Quick">Quick Meals</option>
+        </select>
+
+        <section class="recipe-grid">
+            <div class="recipe">
+            <h2>Qaboli Palaw</h2>
+            <img src="https://th.bing.com/th/id/R.b1e87e25cb87cd141207c5dfe6555d78?rik=dG9ISdLw%2byt6vA&pid=ImgRaw&r=0" alt="Qaboli's pics" width="350">
+            <p>Afghanistan's national dish. Fragrant basmati sice cooked 
+                with lamb, raisins, carrots, and nuts.</p>
+            <a href="recipe-details.html">View full recipe</a>
+            </div>
+
+            <div class="recipe">
+            <h2>Bolani</h2>
+            <img src="https://th.bing.com/th/id/R.42d0b9c95a36317252b5833d8a83fa17?rik=WxcZ1SGr%2bzDgWw&riu=http%3a%2f%2fmedia.zeinaskitchen.se%2f2016%2f12%2fbolani-e1481755906847.jpg&ehk=IiqGz25tmcLLB9cLzB32FpEF%2bbtsyXfNCYno1hSHfPA%3d&risl=&pid=ImgRaw&r=0" alt="Bolani's Picture" width="350">
+            <p>Bolani is a traditional Afghan flatbread, stuffed with ingredients like potatoes, spinach, or lentils, and pan-fried to perfection.
+                It's often enjoyed as a snack or side dish, paired with yogurt or chutney</p>
+            <a href="">View full recipe</a>
+            </div>
+
+            <div class="recipe">
+            <h2>Firni</h2>
+            <img src="https://th.bing.com/th/id/R.0c10e3aacb06855c4ae97492271e393a?rik=kIsh3HTXWUU9WA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-UpxwU8_ql7c%2fT1Zal0O5PPI%2fAAAAAAAAAEM%2f_IzUG1hdPVg%2fs1600%2fFirnee.jpg&ehk=Hz7xOMNFlUsRg33piz0BIRTUxQetWCKeJ6hiq80HSeI%3d&risl=&pid=ImgRaw&r=0" alt="Firni's Picture" width="350">
+            <p>Firni is a creamy rice pudding made with ground rice, milk, sugar, and flavored with cardamom, saffron, or rosewater.
+                It's a popular dessert in South Asia, often served chilled and garnished with nuts like pistachios or almonds.</p>
+            <a href="">View full recipe</a>
+        </div>
+
+        <div class="recipe">
+            <h2>Ashak</h2>
+            <img src="https://afghancooks.com/wp-content/uploads/2022/02/Photo-Jan-30-4-42-14-PM-scaled.jpg" alt="Ashak's picture" width="350">
+            <p>Ashak is an Afghan dish consisting of leek-filled dumplings, topped with tomato sauce and garlic yogurt.</p>
+            <a href="">View full recipe</a>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
